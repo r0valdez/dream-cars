@@ -8,19 +8,19 @@ export default function Detail() {
     <Heading my={2}>1990 Land Rover Defender 90</Heading>
     <Text fontWeight="semibold" color="gray" textTransform="uppercase">MORGAN TWP, PA</Text>
     <Grid my={4} templateColumns="69% 29%" gap="2%">
-      <Image src="/images/car-1.png" borderRadius={8} />
+      <Image src="/images/car-1.png" borderRadius={8} alt="Car" />
       <Grid templateColumns="49% 49%" gap="2%" justify="space-between">
         <Text flex="0 0 50%" fontWeight="bold" fontSize="lg">All Photos(50)</Text>
         <Select flex="0 0 40%" size="sm" borderRadius={4}>
           <option value="All">All</option>
         </Select>
-        <Image src="/images/car-1.png" borderRadius={8} />
-        <Image src="/images/car-1.png" borderRadius={8} />
-        <Image src="/images/car-1.png" borderRadius={8} />
-        <Image src="/images/car-1.png" borderRadius={8} />
-        <Image src="/images/car-1.png" borderRadius={8} />
-        <Image src="/images/car-1.png" borderRadius={8} />
-        <Image src="/images/car-1.png" borderRadius={8} />
+        <Image src="/images/car-1.png" borderRadius={8} alt="Car" />
+        <Image src="/images/car-1.png" borderRadius={8} alt="Car" />
+        <Image src="/images/car-1.png" borderRadius={8} alt="Car" />
+        <Image src="/images/car-1.png" borderRadius={8} alt="Car" />
+        <Image src="/images/car-1.png" borderRadius={8} alt="Car" />
+        <Image src="/images/car-1.png" borderRadius={8} alt="Car" />
+        <Image src="/images/car-1.png" borderRadius={8} alt="Car" />
         <Box pos="relative" overflow="hidden" borderRadius={8}>
           <Image src="/images/car-1.png" />
           <Center pos="absolute" top={0} left={0} bg="rgba(0, 0, 0, .6)" color="white" width="100%" height="100%" >
@@ -107,31 +107,31 @@ export default function Detail() {
               <Text>
                 This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath.
               </Text>
-              <Image src="/images/car-4.png" width="100%" mt={4} borderRadius={8} />
+              <Image src="/images/car-4.png" width="100%" mt={4} borderRadius={8} alt="Car" />
             </TabPanel>
             <TabPanel>
               <Text>
                 This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Exterior
               </Text>
-              <Image src="/images/car-1.png" width="100%" mt={4} borderRadius={8} />
+              <Image src="/images/car-1.png" width="100%" mt={4} borderRadius={8} alt="Car" />
             </TabPanel>
             <TabPanel>
               <Text>
                 This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Interior
               </Text>
-              <Image src="/images/car-4.png" width="100%" mt={4} borderRadius={8} />
+              <Image src="/images/car-4.png" width="100%" mt={4} borderRadius={8} alt="Car" />
             </TabPanel>
             <TabPanel>
               <Text>
                 This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Mechanical
               </Text>
-              <Image src="/images/car-1.png" width="100%" mt={4} borderRadius={8} />
+              <Image src="/images/car-1.png" width="100%" mt={4} borderRadius={8} alt="Car" />
             </TabPanel>
             <TabPanel>
               <Text>
                 This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Extra
               </Text>
-              <Image src="/images/car-4.png" width="100%" mt={4} borderRadius={8} />
+              <Image src="/images/car-4.png" width="100%" mt={4} borderRadius={8} alt="Car" />
             </TabPanel>
           </TabPanels>
         </Tabs>
