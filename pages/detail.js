@@ -94,8 +94,8 @@ export default function Detail() {
           </Table>
         </TableContainer>
         <Tabs mt={4} border="1px" borderColor="gray.300" borderRadius={8} overflow="hidden">
-          <Text fontSize="lg" fontWeight="bold" p={4}>Additional Information/Pictures</Text>
-          <TabList>
+          <Text fontSize="lg" fontWeight="bold" p={4} bg="gray.50">Additional Information/Pictures</Text>
+          <TabList bg="gray.50">
             <Tab>General</Tab>
             <Tab>Exterior</Tab>
             <Tab>Interior</Tab>
