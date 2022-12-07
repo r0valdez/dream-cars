@@ -16,7 +16,7 @@ const Card = ({ imageUrl = '', bidPrice = 0, date = '', tags = [], title = '', d
           <Text color="whiteAlpha.800">{date}</Text>
         </Box>
       </Box>
-      <Flex align="center" gap={2} mb={3}>
+      <Flex align="center" mb={3}>
         {tags.map((tag) => {
           return <Tag key={tag.text} text={tag.text} color={tag.color} />
         })}
@@ -24,7 +24,7 @@ const Card = ({ imageUrl = '', bidPrice = 0, date = '', tags = [], title = '', d
       <Heading as='h4' size='md'>{title}</Heading>
       {address && <Text fontWeight="semibold" color="gray" textTransform="uppercase" fontSize="xs" mt={2}>{address}</Text>}
       <Text my={2} noOfLines={previewLineCount} fontSize="sm" color="blackAlpha.800">{description}</Text>
-      {!isSmall && <Link color="blue.400" fontWeight="bold">View Listings <ArrowForwardIcon /></Link>}
+      {!isSmall && <Link color="blue.400" fontWeight="bold" href="/detail">View Listings <ArrowForwardIcon /></Link>}
     </Box>
   );
 };

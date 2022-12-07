@@ -15,7 +15,7 @@ export default function Home() {
         </Flex>
         <Flex align="center" gap={4}>
           <Select size="sm" borderRadius={4}>
-            <option value="Recently Listed">Live Actions</option>
+            <option value="Recently Listed">Recently Listed</option>
           </Select>
           <InputGroup>
             <InputLeftElement
@@ -47,7 +47,7 @@ export default function Home() {
             previewLineCount={2}
             bidPrice={500}
             date="7 days"
-            tags={[{text: 'featured', color: 'orange'}, {text: 'no reserve', color: 'blue'}]}
+            tags={[{text: 'featured', color: 'orange'}, {text: 'no reserve', color: 'blue.500'}]}
           />
         </Box>
       </Flex>
