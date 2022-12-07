@@ -1,6 +1,4 @@
-import { Box, Center, Container, Flex, Grid, Heading, Image, Link, Select, Text } from "@chakra-ui/react"
-import { SearchIcon } from '@chakra-ui/icons'
-import { BiFilter } from "react-icons/bi"
+import { Box, Button, Center, Container, Divider, Flex, Grid, Heading, Image, Link, Select, Text, Table, Tbody, Tr, Td, TableContainer, Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
 import Tag from "@components/tag"
 
 export default function Detail() {
@@ -30,6 +28,120 @@ export default function Detail() {
           </Center>
         </Box>
       </Grid>
+    </Grid>
+    <Grid my={4} templateColumns="69% 29%" gap="2%">
+      <Box>
+        <TableContainer border="1px" borderColor="gray.300" borderRadius={8}>
+          <Table>
+            <Tbody>
+              <Tr>
+                <Td colSpan={4} bg="gray.50">
+                  <Grid templateColumns="25% 36% 40%">
+                    <Center>Ends in: <Text display="inline" fontWeight="bold">2 Days</Text></Center>
+                    <Flex align="center">
+                      <Divider orientation="vertical" height="3rem" mx={4} />
+                      <Box>
+                        Highest Bid: <Text display="inline" fontSize="xl" fontWeight="bold">${2599.99.toFixed(2)}</Text>
+                        <br />
+                        <Tag text="Reserve not met" color="red.500" />
+                      </Box>
+                    </Flex>
+                    <Flex align="center" gap={6}>
+                      <Divider orientation="vertical" height="3rem" mx={4} />
+                      <Text color="blue.500">27 Bids</Text>
+                      <Button flexGrow={1} colorScheme="blue" size="md">Place Bid</Button>
+                    </Flex>
+                  </Grid>
+                </Td>
+              </Tr>
+              <Tr>
+                <Td width="20%">Seller</Td>
+                <Td width="30%">jeepthing</Td>
+                <Td width="20%" isNumeric>Body Style</Td>
+                <Td width="30%" isNumeric>SUV</Td>
+              </Tr>
+              <Tr>
+                <Td>feet</Td>
+                <Td>centimetres (cm)</Td>
+                <Td isNumeric>25.4</Td>
+                <Td isNumeric>30.48</Td>
+              </Tr>
+              <Tr>
+                <Td>yards</Td>
+                <Td>metres (m)</Td>
+                <Td isNumeric>25.4</Td>
+                <Td isNumeric>0.91444</Td>
+              </Tr>
+              <Tr>
+                <Td width="20%">inches</Td>
+                <Td width="30%">millimetres (mm)</Td>
+                <Td width="20%" isNumeric>25.4</Td>
+                <Td width="30%" isNumeric>25.4</Td>
+              </Tr>
+              <Tr>
+                <Td>feet</Td>
+                <Td>centimetres (cm)</Td>
+                <Td isNumeric>25.4</Td>
+                <Td isNumeric>30.48</Td>
+              </Tr>
+              <Tr>
+                <Td>yards</Td>
+                <Td>metres (m)</Td>
+                <Td isNumeric>25.4</Td>
+                <Td isNumeric>0.91444</Td>
+              </Tr>
+            </Tbody>
+          </Table>
+        </TableContainer>
+        <Tabs mt={4} border="1px" borderColor="gray.300" borderRadius={8} overflow="hidden">
+          <Text fontSize="lg" fontWeight="bold" p={4}>Additional Information/Pictures</Text>
+          <TabList>
+            <Tab>General</Tab>
+            <Tab>Exterior</Tab>
+            <Tab>Interior</Tab>
+            <Tab>Mechanical</Tab>
+            <Tab>Extra</Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel>
+              <Text>
+                This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath.
+              </Text>
+              <Image src="/images/car-4.png" width="100%" mt={4} borderRadius={8} />
+            </TabPanel>
+            <TabPanel>
+              <Text>
+                This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Exterior
+              </Text>
+              <Image src="/images/car-1.png" width="100%" mt={4} borderRadius={8} />
+            </TabPanel>
+            <TabPanel>
+              <Text>
+                This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Interior
+              </Text>
+              <Image src="/images/car-4.png" width="100%" mt={4} borderRadius={8} />
+            </TabPanel>
+            <TabPanel>
+              <Text>
+                This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Mechanical
+              </Text>
+              <Image src="/images/car-1.png" width="100%" mt={4} borderRadius={8} />
+            </TabPanel>
+            <TabPanel>
+              <Text>
+                This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Extra
+              </Text>
+              <Image src="/images/car-4.png" width="100%" mt={4} borderRadius={8} />
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
+      </Box>
+      <Box>
+        <Box border="1px" borderColor="gray.300" p={4} borderRadius={8}>
+          <Text fontSize="lg" fontWeight="bold" mb={2}>Seller's notes</Text>
+          <Text>Up for auction is this 2013 Jeep Wrangler Unlimited four-door, finished in silver over a black interior, powered by a 3.6 liter V6 running through a five speed automatic transmission with selectable four-wheel drive, and 57,100 miles on the clock.</Text>
+        </Box>
+      </Box>
     </Grid>
   </Container>
 }

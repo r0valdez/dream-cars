@@ -9,7 +9,7 @@ const Header = () => {
     <Box display="flex" justifyContent="space-between" alignItems="center" p={4} boxShadow="base">
       <Text display="flex" alignItems="center" gap={1} flexWrap="nowrap" fontSize="2xl" fontWeight="extrabold" color="blue.700"><Icon as={AiFillCloud} boxSize={10} color="blue.300" />Dream Cars</Text>
       <Box display="flex" justifyContent="end" alignItems="center" gap={4} flexWrap="nowrap">
-        {router.pathname != 'home' && (
+        {router.pathname != '/' && (
           <>
             <Link href="/" fontWeight="bold">Home</Link>
             <Link fontWeight="bold">Customer Support</Link>
