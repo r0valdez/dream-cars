@@ -105,31 +105,31 @@ export default function Detail() {
           <TabPanels>
             <TabPanel>
               <Text>
-                This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath.
+                {'This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath.'}
               </Text>
               <Image src="/images/car-4.png" width="100%" mt={4} borderRadius={8} alt="Car" />
             </TabPanel>
             <TabPanel>
               <Text>
-                This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Exterior
+              {'This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Exterior'}
               </Text>
               <Image src="/images/car-1.png" width="100%" mt={4} borderRadius={8} alt="Car" />
             </TabPanel>
             <TabPanel>
               <Text>
-                This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Interior
+                {'This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Interior'}
               </Text>
               <Image src="/images/car-4.png" width="100%" mt={4} borderRadius={8} alt="Car" />
             </TabPanel>
             <TabPanel>
               <Text>
-                This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Mechanical
+                {'This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Mechanical'}
               </Text>
               <Image src="/images/car-1.png" width="100%" mt={4} borderRadius={8} alt="Car" />
             </TabPanel>
             <TabPanel>
               <Text>
-                This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Extra
+                {'This is a very clean and extensively modified "JKU" chassis Wrangler, a two-owner example from Hawaii that is very clean inside, out, and underneath. Extra'}
               </Text>
               <Image src="/images/car-4.png" width="100%" mt={4} borderRadius={8} alt="Car" />
             </TabPanel>
@@ -138,8 +138,8 @@ export default function Detail() {
       </Box>
       <Box>
         <Box border="1px" borderColor="gray.300" p={4} borderRadius={8}>
-          <Text fontSize="lg" fontWeight="bold" mb={2}>Seller's notes</Text>
-          <Text>Up for auction is this 2013 Jeep Wrangler Unlimited four-door, finished in silver over a black interior, powered by a 3.6 liter V6 running through a five speed automatic transmission with selectable four-wheel drive, and 57,100 miles on the clock.</Text>
+          <Text fontSize="lg" fontWeight="bold" mb={2}>{`Seller's notes`}</Text>
+          <Text>{`Up for auction is this 2013 Jeep Wrangler Unlimited four-door, finished in silver over a black interior, powered by a 3.6 liter V6 running through a five speed automatic transmission with selectable four-wheel drive, and 57,100 miles on the clock.`}</Text>
         </Box>
       </Box>
     </Grid>
