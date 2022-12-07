@@ -35,6 +35,7 @@ export default function Home() {
             description="This week, Dream cars is featuring two very clean and nicely modified four-wheel drive vehicles, from two different manufacturers - both highly respected in the off both highly respected in the off"
             previewLineCount={2}
             bidPrice={5000}
+            date="3 days"
             tags={[{text: 'featured', color: 'orange'}]}
           />
         </Box>
@@ -45,6 +46,7 @@ export default function Home() {
             description="Up for auction is this 1969 Ford Torino GT Coupe, finished in Royal Maroon over a black interior, powered by a 302 cubic-inch VB running through a three-speed powered by a 302 cubic-inch VB running through a three-speed"
             previewLineCount={2}
             bidPrice={500}
+            date="7 days"
             tags={[{text: 'featured', color: 'orange'}, {text: 'no reserve', color: 'blue'}]}
           />
         </Box>
@@ -58,6 +60,7 @@ export default function Home() {
             previewLineCount={3}
             address="Morgan Twp, PA"
             bidPrice={500}
+            date="3 days"
             tags={[{text: 'featured', color: 'orange'}]}
             isSmall={true}
           />
@@ -70,6 +73,7 @@ export default function Home() {
             previewLineCount={3}
             address="Morgan Twp, PA"
             bidPrice={500}
+            date="3 days"
             tags={[{text: 'featured', color: 'orange'}]}
             isSmall={true}
           />
@@ -82,6 +86,7 @@ export default function Home() {
             previewLineCount={3}
             address="Morgan Twp, PA"
             bidPrice={500}
+            date="3 days"
             tags={[{text: 'featured', color: 'orange'}]}
             isSmall={true}
           />
@@ -94,6 +99,7 @@ export default function Home() {
             previewLineCount={3}
             address="Morgan Twp, PA"
             bidPrice={500}
+            date="3 days"
             tags={[{text: 'featured', color: 'orange'}]}
             isSmall={true}
           />
