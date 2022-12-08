@@ -8,22 +8,22 @@ export default function Home() {
     <Container maxW="1280px">
       <Flex justify="space-between" align="center" my={4}>
         <Flex align="center" gap={8}>
-          <Select size="sm" borderRadius={4}>
+          <Select borderRadius={4}>
             <option value="Live Actions">Live Actions</option>
           </Select>
-          <Text fontWeight="bold" fontSize="sm" display="flex" alignItems="center" gap={1}><BiFilter />Filter</Text>
+          <Text fontWeight="semibold" display="flex" alignItems="center" gap={1}><BiFilter />Filter</Text>
         </Flex>
         <Flex align="center" gap={4}>
-          <Select size="sm" borderRadius={4}>
+          <Select borderRadius={4}>
             <option value="Recently Listed">Recently Listed</option>
           </Select>
           <InputGroup>
             <InputLeftElement
               pointerEvents='none'
             >
-              <SearchIcon color='gray.300' />
+              <SearchIcon color='gray.400' />
             </InputLeftElement>
-            <Input placeholder="Search Listings..." variant='filled' size="sm" borderRadius={4} />
+            <Input placeholder="Search Listings..." variant='filled' borderRadius={4} />
           </InputGroup>
         </Flex>
       </Flex>
@@ -36,7 +36,7 @@ export default function Home() {
             previewLineCount={2}
             bidPrice={5000}
             date="3 days"
-            tags={[{text: 'featured', color: 'orange'}]}
+            tags={[{text: 'featured', color: 'orange.300'}]}
           />
         </Box>
         <Box width={{ base: '100%', md: '49%' }}>
@@ -47,7 +47,7 @@ export default function Home() {
             previewLineCount={2}
             bidPrice={500}
             date="7 days"
-            tags={[{text: 'featured', color: 'orange'}, {text: 'no reserve', color: 'blue.500'}]}
+            tags={[{text: 'featured', color: 'orange.300'}, {text: 'no reserve', color: 'blue.500'}]}
           />
         </Box>
       </Flex>
@@ -61,7 +61,7 @@ export default function Home() {
             address="Morgan Twp, PA"
             bidPrice={500}
             date="3 days"
-            tags={[{text: 'featured', color: 'orange'}]}
+            tags={[{text: 'featured', color: 'orange.300'}]}
             isSmall={true}
           />
         </Box>
@@ -74,7 +74,7 @@ export default function Home() {
             address="Morgan Twp, PA"
             bidPrice={500}
             date="3 days"
-            tags={[{text: 'featured', color: 'orange'}]}
+            tags={[{text: 'featured', color: 'orange.300'}]}
             isSmall={true}
           />
         </Box>
@@ -87,7 +87,7 @@ export default function Home() {
             address="Morgan Twp, PA"
             bidPrice={500}
             date="3 days"
-            tags={[{text: 'featured', color: 'orange'}]}
+            tags={[{text: 'featured', color: 'orange.300'}]}
             isSmall={true}
           />
         </Box>
@@ -100,7 +100,7 @@ export default function Home() {
             address="Morgan Twp, PA"
             bidPrice={500}
             date="3 days"
-            tags={[{text: 'featured', color: 'orange'}]}
+            tags={[{text: 'featured', color: 'orange.300'}]}
             isSmall={true}
           />
         </Box>

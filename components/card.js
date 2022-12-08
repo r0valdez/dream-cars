@@ -7,24 +7,24 @@ const Card = ({ imageUrl = '', bidPrice = 0, date = '', tags = [], title = '', d
     <Box boxShadow={isSmall ? 'none' : 'base'} borderRadius={isSmall ? 0 : 8} p={isSmall ? 0 : 4}>
       <Box pos="relative" w="100%">
         <Image src={imageUrl} boxSize="100%" alt={title} borderRadius={8} mb={4} />
-        <Box pos="absolute" left="3%" bottom="5%" display="inline-flex" alignItems="center" gap={1} fontSize="xs" backgroundColor="rgba(0, 0, 0, .6)" px={2} py={0.5} borderRadius={5}>
-          {!isSmall && <Text color="whiteAlpha.600">Current Bid: </Text>}
-          <Text color="whiteAlpha.800">${bidPrice.toFixed(2)}</Text>
+        <Box pos="absolute" left="3%" bottom="5%" display="inline-flex" alignItems="center" gap={1} fontSize="xs" backgroundColor="rgba(26, 32, 44, 0.8)" px={2} py={0.5} borderRadius={6}>
+          {!isSmall && <Text color="whiteAlpha.700">Current Bid: </Text>}
+          <Text color="white">${bidPrice.toFixed(2)}</Text>
         </Box>
-        <Box pos="absolute" right="3%" bottom="5%" display="inline-flex" alignItems="center" gap={1} fontSize="xs" backgroundColor="rgba(0, 0, 0, .6)" px={2} py={0.5} borderRadius={5}>
-          <CalendarIcon color="whiteAlpha.800" />
-          <Text color="whiteAlpha.800">{date}</Text>
+        <Box pos="absolute" right="3%" bottom="5%" display="inline-flex" alignItems="center" gap={1} fontSize="xs" backgroundColor="rgba(26, 32, 44, 0.8)" px={2} py={0.5} borderRadius={6}>
+          <CalendarIcon color="whiteAlpha.700" />
+          <Text color="white">{date}</Text>
         </Box>
       </Box>
-      <Flex align="center" mb={3}>
+      <Flex align="center" mb={2}>
         {tags.map((tag) => {
           return <Tag key={tag.text} text={tag.text} color={tag.color} />
         })}
       </Flex>
-      <Heading as='h4' size='md'>{title}</Heading>
-      {address && <Text fontWeight="semibold" color="gray" textTransform="uppercase" fontSize="xs" mt={2}>{address}</Text>}
-      <Text my={2} noOfLines={previewLineCount} fontSize="sm" color="blackAlpha.800">{description}</Text>
-      {!isSmall && <Link color="blue.400" fontWeight="bold" href="/detail">View Listings <ArrowForwardIcon /></Link>}
+      <Heading as='h4' fontSize="18px" lineHeight="28px" color="#1A202C">{title}</Heading>
+      {address && <Text fontWeight="semibold" color="rgba(26, 32, 44, 0.5)" textTransform="uppercase" fontSize="xs" mt={1}>{address}</Text>}
+      <Text my={1} noOfLines={previewLineCount} fontSize="sm" fontWeight="medium" color="rgba(26, 32, 44, 0.7)">{description}</Text>
+      {!isSmall && <Link color="#3182CE" fontSize="sm" fontWeight="semibold" href="/detail">View Listings <ArrowForwardIcon /></Link>}
     </Box>
   );
 };
