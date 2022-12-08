@@ -1,13 +1,12 @@
 import { useRouter } from "next/router";
-import { Box, Button, Icon, Link, Text } from "@chakra-ui/react"
-import { AiFillCloud } from "react-icons/ai"
+import { Box, Button, Image, Link } from "@chakra-ui/react"
 
 const Header = () => {
   const router =  useRouter();
 
   return (
     <Box display="flex" justifyContent="space-between" alignItems="center" p={4} boxShadow="base">
-      <Text display="flex" alignItems="center" gap={1} flexWrap="nowrap" fontSize="2xl" fontWeight="extrabold" color="blue.700"><Icon as={AiFillCloud} boxSize={10} color="blue.300" />DreamCars</Text>
+      <Image src="/images/logo.png" alt="Logo Image" />
       <Box display="flex" justifyContent="end" alignItems="center" gap={4} flexWrap="nowrap">
         {router.pathname != '/' && (
           <>
